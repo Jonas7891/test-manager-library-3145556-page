@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manager Library · Biblioteca en orden</title>
+  <meta name="description" content="Manager Library: catálogo, socios, préstamos y reportes para bibliotecas pequeñas.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="wrap nav">
+      <strong class="logo">📚 Manager Library</strong>
+      <a href="#funciones">Funciones</a>
+      <a href="#roles">Roles</a>
+      <a href="#reglas">Reglas</a>
+      <a href="#proyecto">Proyecto</a>
+    </nav>
+    <div class="wrap hero-body">
+      <h1>La biblioteca pequeña, en orden.</h1>
+      <p>Catálogo de libros, socios y préstamos en un solo lugar, y un reporte claro de qué se presta más.</p>
+      <a class="cta" href="#funciones">Conocer las funciones</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="funciones" class="wrap">
+      <h2>Funciones</h2>
+      <div class="grid">
+        <article class="card"><h3>Catálogo</h3><p>Libros con autor, ISBN de 13 dígitos, una de cinco categorías, ejemplares y portada opcional. Búsqueda por título o autor.</p></article>
+        <article class="card"><h3>Socios</h3><p>Registro por nombre y documento único. Los socios no entran al sistema: son quienes piden los libros.</p></article>
+        <article class="card"><h3>Préstamos</h3><p>De uno a tres libros por préstamo, con vencimiento a los 14 días. Cada ejemplar se descuenta al prestar y vuelve al devolver.</p></article>
+        <article class="card"><h3>Vencidos</h3><p>Lista de libros sin devolver después de su fecha, ordenada por más días de retraso.</p></article>
+        <article class="card"><h3>Más prestados</h3><p>Reporte por rango de fechas. No cambia aunque después se renombre un libro o su categoría.</p></article>
+        <article class="card"><h3>Seguridad</h3><p>Inicio de sesión con roles y contraseñas que nunca se guardan en claro.</p></article>
+      </div>
+    </section>
+
+    <section id="roles" class="wrap">
+      <h2>Roles</h2>
+      <div class="grid two">
+        <article class="card"><h3>Administrador</h3><ul><li>Mantiene el catálogo y las portadas</li><li>Da de alta bibliotecarios</li><li>Ve el reporte de más prestados</li></ul></article>
+        <article class="card"><h3>Bibliotecario</h3><ul><li>Registra préstamos y devoluciones</li><li>Consulta catálogo y socios</li><li>Revisa los libros vencidos</li></ul></article>
+      </div>
+    </section>
+
+    <section id="reglas" class="wrap">
+      <h2>Reglas que el sistema cuida</h2>
+      <ol class="rules">
+        <li>Los ejemplares disponibles siempre están entre cero y el total.</li>
+        <li>Un socio tiene como máximo 3 libros sin devolver.</li>
+        <li>Quien tiene un libro vencido no pide otro hasta devolverlo.</li>
+        <li>Si dos personas prestan el último ejemplar a la vez, solo una lo consigue.</li>
+        <li>Los préstamos no se borran; los libros solo se dan de baja.</li>
+      </ol>
+    </section>
+
+    <section id="proyecto" class="wrap">
+      <h2>El proyecto</h2>
+      <p>Prueba técnica de desarrollo guiado por especificación (SDD), ficha ADSO 3145556. El spec se escribió para Python y .NET y se
+        llevó a <strong>React</strong> y <strong>PHP con Laravel</strong>.</p>
+      <ul class="repos">
+        <li><a href="https://github.com/Jonas7891/test-manager-library-3145556-docs">docs</a>: el spec y su traducción</li>
+        <li><a href="https://github.com/Jonas7891/test-manager-library-3145556-api">api</a>: backend Laravel</li>
+        <li><a href="https://github.com/Jonas7891/test-manager-library-3145556-app">app</a>: frontend React</li>
+        <li><a href="https://github.com/Jonas7891/test-manager-library-3145556-infra">infra</a>: contenedores y base vacía</li>
+        <li><a href="https://github.com/Jonas7891/test-manager-library-3145556-tool">tool</a>: sembrador de demostración</li>
+        <li><a href="https://github.com/Jonas7891/test-manager-library-3145556-page">page</a>: este sitio</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap">Manager Library · Ficha ADSO 3145556 · 2026</footer>
+</body>
+</html>
